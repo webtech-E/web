@@ -23,12 +23,12 @@
                 </label>
                 <ul class="content_nav">
                     <li><a href="index.php">HOME</a></li>
-                    <li><a href="about.php">ABOUT</a></li>
-                    <li><a href="volunteer.php">OUR VOLUNTEERS</a></li>
+                    <li><a href="view/about.php">ABOUT</a></li>
+                    <li><a href="view/volunteer.php">OUR VOLUNTEERS</a></li>
                     <li><a href="#">FIND BLOOD</a></li>
                     <li><a href="#">LIVE FEED</a></li>
-					<li><a href="sign.php">SIGN UP</a></li>
-					<li><a href="login.php">LOGIN</a></li>
+					<li><a href="view/sign.php">SIGN UP</a></li>
+					<li><a href="view/login.php">LOGIN</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,7 +40,7 @@
 		<b>Blood Hub</b>
 		<div class="box">
 			
-			<img class ="logopic"src="admin.gif" alt="Logo Not Find">
+			<img class ="logopic"src="image/admin.gif" alt="Logo Not Find">
 			
 			
 		</div>
@@ -119,7 +119,7 @@
   	 		<div class="footer-col">
   	 			<h4>Blood Hub</h4>
   	 			<ul>
-  	 				<li><a href="about.php">about us</a></li>
+  	 				<li><a href="view/about.php">about us</a></li>
   	 				<li><a href="#">our services</a></li>
   	 				<li><a href="#">privacy policy</a></li>
   	 			</ul>
