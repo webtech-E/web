@@ -1,0 +1,119 @@
+body{
+
+    margin: 0%;
+    padding:  0%;
+ 
+}
+.logopic{
+	position: relative;
+	display:inline;
+	margin:auto;
+    width:99%;	
+	
+	padding:0%;	 
+	 height: 50vh;
+
+}
+.donorpic{
+	position: relative;
+	display:inline;
+	margin:auto;
+    width:13.5%;	
+	
+	padding-right: 3%;	 
+	 height: 3.5vh;
+
+}
+.logoutpic{
+	position: relative;
+	display:inline;
+	margin:auto;
+    width:13.5%;	
+	
+	padding-right: 3%;	 
+	 height: 3.5vh;
+
+}
+header{
+	
+    position: relative;
+	display:grid;
+    font-size:20px;
+    width: 30%;
+	height: 100%;
+	
+    background-color: #11438D;
+
+}
+.container{
+
+   padding: 10%;
+    margin: auto;
+	
+}
+
+.logo{
+
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+
+}
+
+.logo h2{
+
+    text-decoration: none;
+    color: white;
+	letter-spacing:2%;
+}
+
+.content_nav{
+
+    grid-column: 3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	
+
+}
+
+.content_nav li{
+
+    display: inline block;
+    padding-right: 10px;
+
+}
+
+.content_nav li a{
+	
+	text-decoration: none;
+	text-height:20%;
+    text-decoration: center;
+    color: white;
+    position: relative;
+
+}
+
+.content_nav li a::after{
+
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform-origin: bottom;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
+
+}
+
+.content_nav li a:hover::after{
+
+    transform: scale(1, 1);
+
+}
+
+
+
