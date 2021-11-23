@@ -1,11 +1,7 @@
  <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
 	<link rel="stylesheet" href="style/navigat.css">
     <title>navigator</title>
 </head>
@@ -25,7 +21,7 @@
                     <li><a href="index.php">HOME</a></li>
                     <li><a href="view/about.php">ABOUT</a></li>
                     <li><a href="view/volunteer.php">OUR VOLUNTEERS</a></li>
-                    <li><a href="#">FIND BLOOD</a></li>
+                    <li><a href="view/find_blood.php">FIND BLOOD</a></li>
                     <li><a href="#">LIVE FEED</a></li>
 					<li><a href="view/sign.php">SIGN UP</a></li>
 					<li><a href="view/login.php">LOGIN</a></li>
@@ -56,7 +52,7 @@
 		
 		
 		<br><p>
-		<img class="home1" src="home1.jpg" >
+		<img class="home1" src="image/home1.jpg" >
 		
 		<h3> Find blood donors in your area</h3>
 		
@@ -68,7 +64,7 @@
 		</p><br><br>
 		
 		<br><br><p>
-		<img class="home2" src="home2.png" >
+		<img class="home2" src="image/home2.png" >
 		<h3>Eliminating obstacles in emergencies </h3>
 		Our automated blood donation system works 
 		efficiently whenever someone needs a blood 
@@ -81,7 +77,7 @@
 		</p>
 		
 		<br><p>
-		<img class="home3" src="home3.jpg" >
+		<img class="home3" src="image/home3.jpg" >
 		<h3>What could you do?</h3>
 		In as little as few minutes, you can become 
 		someones unnamed, unknown, but all-important hero.
@@ -96,7 +92,7 @@
 		
 		
 		<br><br><p>
-		<img class="home4" src="home4.jpg" >
+		<img class="home4" src="image/home4.jpg" >
 		<h3> Don't have access to internet?</h3>
 		We have an automated SMS (text message) service.
 		All you need to do is send a text message to 8655, 
@@ -120,8 +116,8 @@
   	 			<h4>Blood Hub</h4>
   	 			<ul>
   	 				<li><a href="view/about.php">about us</a></li>
-  	 				<li><a href="#">our services</a></li>
-  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="https://play.google.com/store/apps/details?id=com.savelife.connect.app">our services</a></li>
+  	 				<li><a href="index.php">privacy policy</a></li>
   	 			</ul>
   	 		</div>
   	 		
@@ -129,10 +125,11 @@
   	 		<div class="footer-col">
   	 			<h4>follow us</h4>
   	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  	 			<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+  	 			<a href="https://www.instagram.com/accounts/emailsignup/?hl=bn" target="_blank"><i class="fab fa-instagram"></i></a>
+  	 			<a href="https://www.linkedin.com/signup/cold-join?trk=guest_homepage-basic_nav-header-join"target="_blank" ><i class="fab fa-linkedin-in"></i></a>
+  	 			
   	 			</div>
   	 		</div>
   	 	</div>
