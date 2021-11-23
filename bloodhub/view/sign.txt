@@ -34,3 +34,21 @@ Phone-Number: 0178273623
 City: Jhal Magsi
 Blood-Group: AB-
 ******* 
+Name: sharmin
+Email: sharmin@gmail.com
+Password: sunny
+Confrim-Password: sunny
+Gender: Female
+Phone-Number: 89232987383
+City: Jhal Magsi
+Blood-Group: B-
+******* 
+Name: jamil
+Email: jamil@gmail.com
+Password: jamil
+Confrim-Password: jamil
+Gender: Male
+Phone-Number: 017287823
+City: Gwadar
+Blood-Group: O-
+******* 
