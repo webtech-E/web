@@ -28,7 +28,7 @@
                     <li><a href="about.php">ABOUT</a></li>
                     <li><a href="volunteer.php">OUR VOLUNTEERS</a></li>
                     <li><a href="find_blood.php">FIND BLOOD</a></li>
-                    <li><a href="#">LIVE FEED</a></li>
+                    <li><a href="live_feed.php">LIVE FEED</a></li>
 					<li><a href="sign.php">SIGN UP</a></li>
 					<li><a href="login.php">LOGIN</a></li>
                 </ul>
