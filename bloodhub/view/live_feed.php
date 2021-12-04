@@ -6,9 +6,11 @@
 <html>
 <head>
 	
-	<title>volunteer</title>
-	<link rel="stylesheet"  href="./../style/volunteer.css">
-	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<title>Live Feed</title>
+	<link rel="stylesheet"  href="./../style/liv.css">
+	
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 </head>
 
@@ -38,32 +40,29 @@
 	</header>
 	
 	<div class = "volunteer">
-		<h1>Volunteer Blood Donors</h1>
+		<h1>Live Network Statistics</h1>
 	</div>
 	
 	
 	<div class="box">
-		<h3>Our super heroes are our volunteer blood donors</h3>
+		<h3>Our Volunteer Network Statistics</h3>
 		<div class="box2">
 			<table class="table_vol">
-				<thead>
+			<thead>
 					<th>Name</th>
-					<th>Location</th>
-					<th>Blood_Group</th>
+					<th>Post</th>
+					
 				</thead>
-			
 		<?php
-				
-				$query = "select * from sign";
+				$query = "select * from comments";
 				$result = mysqli_query($conn, $query);
 				while($res = mysqli_fetch_array($result)){
 		?>
 			<tbody>
 				
 				<tr>
-				<td><?php echo $res['full_name']?></td>
-				<td><?php echo $res['city']?></td>
-				<td><?php echo $res['blood_group']?></td>
+				<td><?php echo $res['name']?></td>
+				<td><?php echo $res['comments']?></td>
 				</tr>
 			</tbody>
 				<?php }?>	
@@ -71,39 +70,28 @@
 		</div><br>
 		<br>
 		<div class="box3">
-			<h5>Filter Results</h5>
-			<input type='radio' name="bld_group" value="A+"> A+&nbsp;
-			<input type='radio' name="bld_group" value="A-">A-&nbsp;
-			<input type='radio' name="bld_group" value="AB+">AB+&nbsp;
-			<input type='radio' name="bld_group" value="AB-">AB-&nbsp;
-			<input type='radio' name="bld_group" value="B+">B+&nbsp;
-			<input type='radio' name="bld_group" value="B-">B-&nbsp;
-			<input type='radio' name="bld_group" value="O+">O+&nbsp;
-			<input type='radio' name="bld_group" value="O-">O-&nbsp;
-			<input type='radio' name="bld_group" value="OH+">OH+&nbsp;
-			<br>
-			<button class='box3_btn'>Filter</button>
+			<h5>Urgent Blood Request<h5>
+			
+			<form action="commentsval.php" method="POST" class="form">
+		
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" placeholder="Enter your Name" required><br>
+				
+				<br><label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="Enter your Email" required><br>
+				
+				<br><label for="comment">Comment</label>
+				<textarea id="comment" name="comment" placeholder="Enter your Comment" required></textarea>
+			
+				<br ><br><button name="submit" class="btn">Post Comment</button>
+			
+		
+			</form>
+						
+	
 		</div>
 		
-		<h3>Our active volunteer blood donors</h3>
-		<p>
-		We depend on volunteers! Volunteers make 
-		up 96% of our total workforce and carry 
-		on our humanitarian work. Blood donation 
-		is healthy, our volunteers are available 24/7 
-		to help and donate blood. Blood banks store 
-		blood bags but our volunteers are there with 
-		you in an emergency for a blood transfusion 
-		real time.
-		</p>
-		<p>
-		Donating blood or platelets can be intimidating
-		and even scary for many people. Time to put 
-		those hesitations and fears aside. 
-		Learn from Save Life Connect blood and
-		platelet donors how simple and easy 
-		it is to roll up a sleeve and help save lives.
-		</p>	
+		
     </div>
 	<footer class="footer">
   	 <div class="container1">

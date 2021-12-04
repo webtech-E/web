@@ -21,7 +21,6 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         header("Location: login.php?error=Password is required");
 	    exit();
 	}else{
-		
 		$sql = "SELECT * FROM admin WHERE email='$email' AND password='$password'";
 		$sql_s = "SELECT * FROM sign WHERE email='$email' AND password='$password'";
 		
@@ -34,15 +33,31 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
             	$_SESSION['email'] = $row['email'];
             	//$_SESSION['name'] = $row['name'];
             	$_SESSION['password'] = $row['password'];
-            	header("Location: co-ordinator/commentdata.php");
-				//header("Location: admin/ahome.php");
+            	header("Location: admin/ahome.php");
 		        exit();
             }else{
 				header("Location: login.php?error=Incorect Email or password");
 		        exit();
 			}
-		  }
+		}else if(mysqli_num_rows($result_s) === 1) {
+			$row = mysqli_fetch_assoc($result_s);
+            if ($row['email'] === $email && $row['password'] === $password) {
+            	$_SESSION['email'] = $row['email'];
+            	//$_SESSION['name'] = $row['name'];
+            	$_SESSION['password'] = $row['password'];
+            	header("Location: ahome.php");
+		        exit();
+            }else{
+				header("Location: login.php?error=Incorect Email or password");
+		        exit();
+			}
 		}
+		
+		else{
+			header("Location: login.php?error=Incorect Email or password");
+	        exit();
+		}
+	}
 	
 }else{
 	header("Location: login.php");

@@ -75,8 +75,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // query here
    if ($_POST["c_password"] == $_POST["password"]) {
 	   
-	   //$query = "INSERT INTO sign(full_name,email,password,gender,phone_number,city,blood_group) VALUES ('$full_name','$email','$password','$gender','$phone_number','$city','$blood_group')";
-	   //$query_run = mysqli_query($conn,$query);
+	   $query = "INSERT INTO sign(full_name,email,password,gender,phone_number,city,blood_group) VALUES ('$full_name','$email','$password','$gender','$phone_number','$city','$blood_group')";
+	   $query_run = mysqli_query($conn,$query);
 	  if (isset($_POST["full_name"]) && isset($_POST["email"])&&isset($_POST['password']) &&isset($_POST['c_password'])  &&isset($_POST['gender'])  &&isset($_POST['phone_number']) &&isset($_POST['city'])  &&isset($_POST['blood_group'])) {
 
 		   $massage1 =  "Register Successfully";
@@ -137,25 +137,25 @@ function test_input($data) {
         <div class="form-group">
           <label for="full-name">Full Name</label>
           <input type="text" id="fullName" name="full_name" placeholder="input your name">
-		  <span class="error">* <?php echo $full_nameErr;?></span>
+		  <span class="error"> <?php echo $full_nameErr;?></span>
 		</div>
         
         <div class="form-group">
           <label for="email">Email(must be uniqe)</label>
 		  <input type="text" id="email" name="email" placeholder="input you email">
-			<span class="error">* <?php echo $emailErr;?></span>
+			<span class="error"> <?php echo $emailErr;?></span>
 		</div>
 	
 		<div class="form-group">
               <label for="password">Password</label>
               <input type="password" name="password"  placeholder="Password" class="form-control" >
-			  <span class="error">* <?php echo $passwordErr;?></span>
+			  <span class="error"> <?php echo $passwordErr;?></span>
 			</div><!--End form-group-->
             <div class="form-group">
               <label for="password">Confirm Password</label>
               <input type="password" name="c_password"  placeholder="Confirm Password" class="form-control">
 
-				<span class="error">* <?php echo $c_passwordErr;echo $passerror; ?></span>
+				<span class="error"><?php echo $c_passwordErr;echo $passerror; ?></span>
 			</div>
 		<div class="form-group">
 			
@@ -169,7 +169,7 @@ function test_input($data) {
 			<input type="radio" name="gender" value="Male"> &nbsp; Male
 			<input type="radio" name="gender" value="Female"> &nbsp; Female
 			<input type="radio" name="gender" value="Others"> &nbsp; Others
-			<span class="error">* <?php echo $genderErr;?></span>
+			<span class="error"> <?php echo $genderErr;?></span>
 			</td>
 		</tr>
 		</table>	
@@ -198,7 +198,7 @@ function test_input($data) {
         <div class="form-group">
           <label for="phone">Phone</label>
           <input type="text" id="phone" name="phone_number" placeholder="+880********">
-			<span class="error">* <?php echo $phone_numberErr;?></span>
+			<span class="error"> <?php echo $phone_numberErr;?></span>
 		</div>
         
 		<div class="form-group">
@@ -223,7 +223,7 @@ function test_input($data) {
                 <option value="B+">B+</option>
                 <option value="B-">B-</option>
                 <option value="O+">O+</option>
-                <option value="O-">O+</option>
+                <option value="O-">O-</option>
                 <option value="AB+">AB+</option>
                 <option value="AB-">AB-</option>
 				

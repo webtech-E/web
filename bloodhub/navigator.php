@@ -22,7 +22,7 @@
                     <li><a href="view/about.php">ABOUT</a></li>
                     <li><a href="view/volunteer.php">OUR VOLUNTEERS</a></li>
                     <li><a href="view/find_blood.php">FIND BLOOD</a></li>
-                    <li><a href="#">LIVE FEED</a></li>
+                    <li><a href="view/live_feed.php">LIVE FEED</a></li>
 					<li><a href="view/sign.php">SIGN UP</a></li>
 					<li><a href="view/login.php">LOGIN</a></li>
                 </ul>
